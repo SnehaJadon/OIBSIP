@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST</title>
+    <script
+      src="https://kit.fontawesome.com/98f1f50938.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <i class="fa-solid fa-pen-to-square"></i>
+      <p>To Do List</p>
+    </header>
+    <main>
+      <section id="section-1">
+        <p>Add Tasks To Do</p>
+        <form id="task-form" onsubmit="addTaskForm(event)" >
+          <input type="text" id="task-input" placeholder="Enter The Task" />
+          <input type="submit" value="Add Task" id="submit-button" />
+        </form>
+      </section>
+      <section id="section-2">
+        <p>Tasks</p>
+        <div class="to-do-tasks" id="tasks">
+          <div class="to-do-task">
+            <input type="text" placeholder="Example" readonly/>
+            <button class="edit-button">Edit</button>
+            <button class="delete-button">Delete</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
